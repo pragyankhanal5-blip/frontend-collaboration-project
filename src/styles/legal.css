@@ -1,0 +1,129 @@
+.legal-page {
+  min-height: 100vh;
+  background: var(--cream-50);
+}
+
+.legal-header {
+  height: 78px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.legal-header > div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.legal-header > div > a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--forest-700);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.legal-content {
+  max-width: 790px;
+  padding-top: 85px;
+  padding-bottom: 110px;
+}
+
+.legal-content h1 {
+  margin-bottom: 9px;
+  color: var(--forest-950);
+  font-family: var(--serif);
+  font-size: clamp(45px, 6vw, 65px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+
+.legal-content__updated {
+  margin-bottom: 42px;
+  color: var(--ink-muted);
+  font-size: 10px;
+}
+
+.legal-content__intro {
+  margin-bottom: 51px;
+  color: var(--ink-soft);
+  font-family: var(--serif);
+  font-size: 23px;
+  line-height: 1.5;
+}
+
+.legal-sections {
+  display: grid;
+  gap: 0;
+}
+
+.legal-sections section {
+  padding: 27px 0;
+  border-top: 1px solid var(--line-dark);
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+}
+
+.legal-sections section:last-child {
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.legal-sections h2 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.legal-sections p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.legal-content aside {
+  margin-top: 35px;
+  padding: 20px 22px;
+  border-radius: 9px;
+  background: var(--forest-50);
+}
+
+.legal-content aside strong {
+  font-family: var(--serif);
+  font-size: 17px;
+}
+
+.legal-content aside p {
+  margin: 5px 0 0;
+  color: var(--ink-soft);
+  font-size: 10px;
+}
+
+.legal-content aside a {
+  color: var(--forest-700);
+  font-weight: 700;
+}
+
+@media (max-width: 620px) {
+  .legal-header {
+    height: 70px;
+  }
+
+  .legal-content {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .legal-content__intro {
+    font-size: 20px;
+  }
+
+  .legal-sections section {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
